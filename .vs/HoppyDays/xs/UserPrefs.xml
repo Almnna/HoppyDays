@@ -1,0 +1,35 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="items/Portal.cs">
+    <Files>
+      <File FileName="Player/Player.cs" Line="28" Column="6" IsPinned="True" />
+      <File FileName="NPCs/Lightning.cs" />
+      <File FileName="Levels/GameState.cs" />
+      <File FileName="Levels/GameOver.cs" />
+      <File FileName="items/Portal.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HoppyDays" expanded="True">
+            <Node name="HoppyDays" expanded="True">
+              <Node name="GUI" expanded="True" />
+              <Node name="Hazards" expanded="True" />
+              <Node name="items" expanded="True">
+                <Node name="Portal.cs" selected="True" />
+              </Node>
+              <Node name="Levels" expanded="True" />
+              <Node name="NPCs" expanded="True" />
+              <Node name="Player" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://GFX/HUD/bannerHanging.png" type="Texture" id=1]
+[ext_resource path="res://GFX/HUD/coin_bronze.png" type="Texture" id=2]
+[ext_resource path="res://GFX/HUD/lifes.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://GUI/GUI.cs" type="Script" id=5]
+[ext_resource path="res://GUI/RButton.png" type="Texture" id=6]
+[ext_resource path="res://GUI/LButton.png" type="Texture" id=7]
+[ext_resource path="res://GUI/JButton.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="GUI" type="CanvasLayer" groups=[
+"GUI",
+]]
+script = ExtResource( 5 )
+
+[node name="Control" type="Control" parent="."]
+anchor_top = 0.000349414
+anchor_right = 1.0
+anchor_bottom = 1.00035
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Banner" type="TextureRect" parent="Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -286.0
+margin_top = 18.0
+margin_bottom = 59.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Banner"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -28.0
+margin_bottom = 12.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="coinsCount" type="Label" parent="Control/Banner/HBoxContainer"]
+margin_top = 4.0
+margin_right = 62.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 2
+
+[node name="coins" type="TextureRect" parent="Control/Banner/HBoxContainer"]
+margin_left = 66.0
+margin_right = 126.0
+margin_bottom = 71.0
+texture = ExtResource( 2 )
+
+[node name="livesCount" type="Label" parent="Control/Banner/HBoxContainer"]
+margin_left = 130.0
+margin_top = 4.0
+margin_right = 192.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 2
+
+[node name="life" type="TextureRect" parent="Control/Banner/HBoxContainer"]
+margin_left = 196.0
+margin_right = 248.0
+margin_bottom = 71.0
+texture = ExtResource( 3 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_right = 1024.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left" type="TouchScreenButton" parent="Control/HBoxContainer"]
+position = Vector2( 1.92062, -134.444 )
+normal = ExtResource( 7 )
+action = "left"
+
+[node name="Right" type="TouchScreenButton" parent="Control/HBoxContainer"]
+position = Vector2( 119.079, -135.084 )
+normal = ExtResource( 6 )
+action = "right"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1024.0
+margin_top = -121.0
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jump" type="TouchScreenButton" parent="Control/HBoxContainer2"]
+position = Vector2( 876.021, -8.15662 )
+normal = ExtResource( 8 )
+action = "jump"

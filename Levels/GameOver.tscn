@@ -1,0 +1,101 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://GFX/Background/bg_layer4.png" type="Texture" id=1]
+[ext_resource path="res://GFX/Background/bg_layer1.png" type="Texture" id=2]
+[ext_resource path="res://GFX/Background/bg_layer2.png" type="Texture" id=3]
+[ext_resource path="res://GFX/Background/bg_layer3.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/candles_.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://GFX/HUD/ButtonActive.png" type="Texture" id=6]
+[ext_resource path="res://GFX/HUD/ButtonInActive.png" type="Texture" id=7]
+[ext_resource path="res://Levels/GameOver.cs" type="Script" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+outline_size = 5
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 45
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 5 )
+
+[node name="GameOver" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackGround" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="BackGround2" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="BackGround3" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="BackGround4" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 172.0
+margin_top = 186.0
+margin_right = 852.0
+margin_bottom = 414.0
+
+[node name="gameover" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 680.0
+margin_bottom = 153.0
+custom_fonts/font = SubResource( 1 )
+text = "Game Over"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 157.0
+margin_right = 680.0
+margin_bottom = 228.0
+alignment = 1
+
+[node name="retry" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 193.0
+margin_top = 6.0
+margin_right = 430.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 2 )
+text = "Try Again"
+
+[node name="tryagain" type="TextureButton" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 460.0
+margin_right = 486.0
+margin_bottom = 71.0
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/tryagain" to="." method="_on_tryagain_pressed"]
