@@ -1,8 +1,8 @@
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/bin/ExportDebug/HoppyDays.dll
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/bin/ExportDebug/HoppyDays.pdb
-/Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.csprojAssemblyReference.cache
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.AssemblyInfoInputs.cache
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.AssemblyInfo.cs
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.csproj.CoreCompileInputs.cache
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.dll
 /Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.pdb
+/Users/ahmadalmnna/GodoProjects/HoppyDays/.mono/temp/obj/ExportDebug/HoppyDays.csproj.AssemblyReference.cache
